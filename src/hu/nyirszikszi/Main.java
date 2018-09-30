@@ -10,7 +10,7 @@ public class Main {
 		ArrayList<Worker> workers = new ArrayList<>();
 		
 		try {
-			Scanner s = new Scanner(new File("lists.txt"));
+			Scanner s = new Scanner(new File("list.txt"));
 			
 			while (s.hasNext()) {
 				String line = s.nextLine();
