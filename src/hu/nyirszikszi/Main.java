@@ -19,6 +19,8 @@ public class Main {
 				Worker w = new Worker(array[0], Integer.parseInt(array[1]), array[2]);
 				workers.add(w);
 			}
+
+			s.close();
 		}
 		catch (IOException e) {
 			System.out.println(e.getMessage());
