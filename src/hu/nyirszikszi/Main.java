@@ -1,26 +1,24 @@
 package hu.nyirszikszi;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
 		ArrayList<Worker> workers = new ArrayList<>();
+		String row;
 		
 		try {
-			Scanner s = new Scanner(new File("list.txt"));
+			RandomAccessFile f = new RandomAccessFile("list.txt", "r");
 			
-			while (s.hasNext()) {
-				String line = s.nextLine();
-				
-				String[] array = line.split(";");
+			while ((row = f.readLine()) != null) {
+				String[] array = row.split(";");
 				Worker w = new Worker(array[0], Integer.parseInt(array[1]), array[2]);
 				workers.add(w);
 			}
 
-			s.close();
+			f.close();
 		}
 		catch (IOException e) {
 			System.out.println(e.getMessage());
@@ -45,7 +43,9 @@ public class Main {
 			}
 		}
 		
-		System.out.println(workers.get(index).getName() + " (" + workers.get(index).getYear() + ") - " + workers.get(index).getJob());
+		if (index != null) {
+			System.out.println("A legfiatalabb munkatárs: " + workers.get(index).getName() + " (" + workers.get(index).getYear() + ") - " + workers.get(index).getJob());
+		}
 	}
 	
 	private static void getWorkerName (String job, ArrayList<Worker> workers) {

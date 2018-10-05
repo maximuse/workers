@@ -1,9 +1,9 @@
-Nagy J√°nos;1987;programoz√≥ (back end)
-Szab√≥ G√°bor;1981;programoz√≥ (front end)
-Kov√°cs Istv√°n;1985;designer
-Varga Andr√°s;1991;marketinges
-Kiss Tam√°s;1979;project manager
-T√≥th Marcell;1990;szoftvertesztel≈ë
-Horv√°th Andrea;1992;√ºgyf√©lszolg√°latos
-Lakatos √Åd√°m;1989;rendszergazda
-Balogh J√≥zsef;1988;mobilalkalmaz√°s fejleszt≈ë
+Nagy J·nos;1987;programozÛ (back end)
+SzabÛ G·bor;1981;programozÛ (front end)
+Kov·cs Istv·n;1985;designer
+Varga Andr·s;1991;marketinges
+Kiss Tam·s;1979;project manager
+TÛth Marcell;1990;szoftvertesztelı
+Horv·th Andrea;1992;¸gyfÈlszolg·latos
+Lakatos ¡d·m;1989;rendszergazda
+Balogh JÛzsef;1988;mobilalkalmaz·s fejlesztı
